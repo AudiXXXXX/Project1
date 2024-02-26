@@ -1,0 +1,187 @@
+Mang:
+   HomeScreen:
+   FirstScreen:
+
+
+<HomeScreen>:
+   name: "Home"
+   Label:
+      id: label1
+      text:"| WELL COME TO TIC TAC TO |"
+      pos_hint:{"center_x":0.5,"center_y":0.6}
+
+      
+   Button:
+      id: btn1
+      text:"Start"
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.5,"center_y":0.5}
+      background_color:(1,0,0,1)
+      on_release:
+         app.root.current="Frist"
+         root.manager.transition.direction="left"
+   Button:
+      id: btn2
+      text:"Easy"
+      background_color:(1,0,0,1)
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.1,"center_y":0.95}
+      on_release:
+         app.root.mod()
+         root.moda()
+   Button:
+      id: btn3
+      text:"Median"
+      background_color:(1,0,0,1)
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.1,"center_y":0.89}
+      on_release:
+         app.root.mod2()
+         root.moda2()
+   Button:
+      id: btn4
+      text:"Hard(Not abable)"
+      background_color:(1,0,0,1)
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.1,"center_y":0.83}
+
+
+
+<FirstScreen>:
+   name:"Frist"
+   id: sc
+   Button:
+      id: b7
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.1,"center_y":0.9}
+      on_release:
+         root.check7()
+         root.winner()
+         
+   Button:
+      id: b4
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.1,"center_y":0.7}
+      on_release:
+         root.check4()
+         root.winner()
+         
+   Button:
+      id: b1
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.1,"center_y":0.5}
+      on_release:
+         root.check1()
+         root.winner()
+   Button:
+      id: b8
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.5,"center_y":0.9}
+      on_release:
+         root.check8()
+         root.winner()
+   Button:
+      id: b5
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.5,"center_y":0.7}
+      on_release:
+         root.check5()
+         root.winner()
+   Button:
+      id: b2
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.5,"center_y":0.5}
+      on_release:
+         root.check2()
+         root.winner()
+   Button:
+      id: b9
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.9,"center_y":0.9}
+      on_release:
+         root.check9()
+         root.winner()
+   Button:
+      id: b6
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.9,"center_y":0.7}
+      on_release:
+         root.check6()
+         root.winner()
+   Button:
+      id: b3
+      text:""
+      background_color:(1,1,1,1)
+      size_hint:(None,None)
+      height:60
+      width: 60
+      pos_hint:{"center_x":0.9,"center_y":0.5}
+      on_release:
+         root.check3()
+         root.winner()
+   Button:
+      id: reset
+      text:"Restart"
+      background_color:(1,0,0,1)
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.5,"center_y":0.2}
+      on_release:
+         root.reset()
+   Button:
+      id: back
+      text:"Back"
+      background_color:(1,0,0,1)
+      size_hint:(None,None)
+      height:40
+      width: 200
+      pos_hint:{"center_x":0.5,"center_y":0.1}
+      on_release:
+         app.root.current="Home"
+         root.manager.transition.direction="right"
+   Label:
+      id: l1
+      text:""
+      pos_hint:{"center_x":0.5,"center_y":0.3}
+   
